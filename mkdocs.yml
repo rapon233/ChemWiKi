@@ -1,0 +1,27 @@
+site_name: ChemWiki  
+copyright: '&copy; 2019 王若鹏 All rights reserved.'  
+
+nav:
+    - Home: index.md  
+    - 换热器:  
+        - '总述': HE/换热器总述.md 
+        - '管壳式换热器/Shell & Tube Exchanger': HE/snt.md  
+        - '管壳式换热器计算方法': HE/sntcal.md  
+        - '重沸器（再沸器）/Reboiler': HE/reboiler.md
+
+theme:
+  name: 'material'
+#include_search_page: true
+#search_index_only: false
+
+extra_javascript:
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
+markdown_extensions:
+    - markdown.extensions.admonition
+    - pymdownx.arithmatex
+    - mdx_math
+    - markdown_include.include:
+        base_path: docs
+site_dir: build  
+plugins:
+    - search

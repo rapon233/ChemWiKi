@@ -1,0 +1,817 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.5.0">
+    
+    
+      
+        <title>管壳式换热器计算方法 - ChemWiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="ChemWiki" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              ChemWiki
+            </span>
+            <span class="md-header-nav__topic">
+              
+                管壳式换热器计算方法
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="ChemWiki" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    ChemWiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      换热器
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        换热器
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../换热器总述/" title="总述" class="md-nav__link">
+      总述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../snt/" title="管壳式换热器/Shell & Tube Exchanger" class="md-nav__link">
+      管壳式换热器/Shell & Tube Exchanger
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        管壳式换热器计算方法
+      </label>
+    
+    <a href="./" title="管壳式换热器计算方法" class="md-nav__link md-nav__link--active">
+      管壳式换热器计算方法
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    基本关系式和经验数据
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    基本关系式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    基本关系式计算
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    管内膜传热系数及压力降
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    管内膜传热系数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    管程压力降
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reboiler/" title="重沸器（再沸器）/Reboiler" class="md-nav__link">
+      重沸器（再沸器）/Reboiler
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    基本关系式和经验数据
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    基本关系式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    基本关系式计算
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    管内膜传热系数及压力降
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    管内膜传热系数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    管程压力降
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>管壳式换热器计算方法</h1>
+                
+                <p>管壳式换热器计算方法  </p>
+<h2 id="_1">基本关系式和经验数据</h2>
+<h3 id="_2">基本关系式</h3>
+<p>单位传热面积传递的热量<span><span class="MathJax_Preview">\frac{Q}{A}</span><script type="math/tex">\frac{Q}{A}</script></span>与有效温差<span><span class="MathJax_Preview">\Delta T</span><script type="math/tex">\Delta T</script></span>成正比，与各项热阻之和成反比<br />
+<script type="math/tex; mode=display"> \frac{Q}{A}=\frac{\Delta T}{\sum R}=\frac{\Delta T}{\frac{1}{K}}=\Delta T \cdot K </script> 
+通常写成：<span><span class="MathJax_Preview">Q=K \cdot A \cdot \Delta T</span><script type="math/tex">Q=K \cdot A \cdot \Delta T</script></span><br />
+其中，<span><span class="MathJax_Preview">K</span><script type="math/tex">K</script></span>是各项热阻和的倒数：<br />
+<script type="math/tex; mode=display"> K=\frac{1}{\frac{A_0}{A_i} \cdot (\frac{1}{h_i}+r_i)+(\frac{1}{h_0}+r_0)+ r_p} </script>
+<br />
+换热面积余量：<br />
+<script type="math/tex; mode=display"> C_f=(\frac{A}{A_d}-1)\times 100 </script>
+</p>
+<p><strong>符号表</strong>  </p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>物理意义</th>
+<th>单位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span><span class="MathJax_Preview">Q</span><script type="math/tex">Q</script></span></td>
+<td>热负荷</td>
+<td><span><span class="MathJax_Preview">W</span><script type="math/tex">W</script></span></td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">A</span><script type="math/tex">A</script></span></td>
+<td>换热面积（管外表面积）</td>
+<td><span><span class="MathJax_Preview">m^2</span><script type="math/tex">m^2</script></span></td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">A_d</span><script type="math/tex">A_d</script></span></td>
+<td>计算换热面积</td>
+<td><span><span class="MathJax_Preview">m^2</span><script type="math/tex">m^2</script></span></td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">A_i</span><script type="math/tex">A_i</script></span></td>
+<td>管内表面积</td>
+<td><span><span class="MathJax_Preview">m^2</span><script type="math/tex">m^2</script></span></td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">A_0</span><script type="math/tex">A_0</script></span></td>
+<td>管外表面积</td>
+<td><span><span class="MathJax_Preview">m^2</span><script type="math/tex">m^2</script></span></td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">C_f</span><script type="math/tex">C_f</script></span></td>
+<td>换热面积余量</td>
+<td>%</td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">\Delta T</span><script type="math/tex">\Delta T</script></span></td>
+<td>有效平均温差</td>
+<td>&deg;C</td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">\sum R</span><script type="math/tex">\sum R</script></span></td>
+<td>热阻之和</td>
+<td><span><span class="MathJax_Preview">m^2 \cdot K/W</span><script type="math/tex">m^2 \cdot K/W</script></span></td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">K</span><script type="math/tex">K</script></span></td>
+<td>总传热系数（管外表面积为基准）</td>
+<td><span><span class="MathJax_Preview">W/(m^2 \cdot K)</span><script type="math/tex">W/(m^2 \cdot K)</script></span></td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">h_i</span><script type="math/tex">h_i</script></span></td>
+<td>管内流体膜传热系数</td>
+<td><span><span class="MathJax_Preview">W/(m^2 \cdot K)</span><script type="math/tex">W/(m^2 \cdot K)</script></span></td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">h_o</span><script type="math/tex">h_o</script></span></td>
+<td>管外流体膜传热系数</td>
+<td><span><span class="MathJax_Preview">W/(m^2 \cdot K)</span><script type="math/tex">W/(m^2 \cdot K)</script></span></td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">r_i</span><script type="math/tex">r_i</script></span></td>
+<td>管内流体结构热阻</td>
+<td><span><span class="MathJax_Preview">m^2 \cdot K/W</span><script type="math/tex">m^2 \cdot K/W</script></span></td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">r_o</span><script type="math/tex">r_o</script></span></td>
+<td>管外流体结构热阻</td>
+<td><span><span class="MathJax_Preview">m^2 \cdot K/W</span><script type="math/tex">m^2 \cdot K/W</script></span></td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">r_p</span><script type="math/tex">r_p</script></span></td>
+<td>管壁金属热阻</td>
+<td><span><span class="MathJax_Preview">m^2 \cdot K/W</span><script type="math/tex">m^2 \cdot K/W</script></span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="_3">基本关系式计算</h3>
+<p><strong>热负荷</strong>  </p>
+<p>1.焓差以及介质流量：<br />
+<script type="math/tex; mode=display"> Q=W \cdot \Delta H </script>
+<br />
+2.平均比热<span><span class="MathJax_Preview">C_p</span><script type="math/tex">C_p</script></span>、进出口温度以及介质流量：<br />
+<script type="math/tex; mode=display"> Q=W \cdot C_p \cdot (T_1 -T_2) </script>
+</p>
+<blockquote>
+<p>冷流体为  <span><span class="MathJax_Preview">(t_2 - t_1)</span><script type="math/tex">(t_2 - t_1)</script></span>  </p>
+</blockquote>
+<p>设计换热器时，以热流体的热负荷作为总热负荷值较为安全。冷热物流热负荷相对误差应在&plusmn;10%以内。  </p>
+<hr />
+<p><strong>有效平均温差</strong>  </p>
+<p>1.对数平均温差<span><span class="MathJax_Preview">(\Delta T_m)</span><script type="math/tex">(\Delta T_m)</script></span></p>
+<p>令热端温差<span><span class="MathJax_Preview">\Delta t_h = T_1 - t_2</span><script type="math/tex">\Delta t_h = T_1 - t_2</script></span>；冷端温差<span><span class="MathJax_Preview">\Delta t_ｃ = T_2 - t_1</span><script type="math/tex">\Delta t_ｃ = T_2 - t_1</script></span><br />
+当<span><span class="MathJax_Preview">|(\Delta t_h / \Delta t_c)-1| \le 0.1</span><script type="math/tex">|(\Delta t_h / \Delta t_c)-1| \le 0.1</script></span>时，
+<script type="math/tex; mode=display"> \Delta T_m = \frac{(\Delta t_h + \Delta t_c)}{2}=\frac{(T_1 - t_2) + (T_2 - t_1)}{2} </script>
+<br />
+当<span><span class="MathJax_Preview">|(\Delta t_h / \Delta t_c)-1| &gt; 0.1</span><script type="math/tex">|(\Delta t_h / \Delta t_c)-1| > 0.1</script></span>时，
+<script type="math/tex; mode=display"> \Delta T_m = \frac{(\Delta t_h - \Delta t_c)}{ln(\frac{\Delta t_h}{\Delta t_c})}=\frac{(T_1 - t_2) - (T_2 - t_1)}{ln(\frac{T_1 - t_2}{T_2 - t_1})} </script>
+</p>
+<p>2.对数平均温差校正系数<span><span class="MathJax_Preview">(F_T)</span><script type="math/tex">(F_T)</script></span></p>
+<p><span><span class="MathJax_Preview">F_T</span><script type="math/tex">F_T</script></span>值不得小于0.8<br />
+应当增加壳程串联数，或重新调整冷热物流出口温度</p>
+<p>3.平均有效温差<span><span class="MathJax_Preview">(\Delta T)</span><script type="math/tex">(\Delta T)</script></span>
+<script type="math/tex; mode=display"> \Delta T = \Delta T_m \cdot F_T </script>
+</p>
+<hr />
+<p><strong>总传热系数与经验值</strong>  </p>
+<p>在初选换热器型号时，建议先用经验的总传热系数估箕换热面积。选出具体型号后，再详细计算各项热阻，求出总传热系数计算值。如果计算值与选用的经验值相对误差较大，一般超过&plusmn;25%以上，则需要调整经验值重新估算面积。</p>
+<hr />
+<p><strong>结构热阻</strong>  </p>
+<p>换热器在操作中不断地被污垢所覆盖，它对传热和流动阻力都有很大的影响。在油品的一侧易发生沉积物的堆积，在水的一侧易积水垢。<br />
+沉积物可划分为如下的种类：  </p>
+<ul>
+<li>固体沉积物：如盐类、焦炭、铁锈和氧化皮等；  </li>
+<li>游离状沉积物：碳黑、淤泥、黏土和焦粉等。  </li>
+</ul>
+<p>使换热表面结垢热阻增大的原因一般有：  </p>
+<ul>
+<li>物流流速较低  </li>
+<li>物流温度升高或管壁温度高于主物流温度  </li>
+<li>管壁粗糙或结构上有死角  </li>
+<li>油品中焦炭、石蜡和机械杂质的增高  </li>
+<li>
+<p>水的硬度增大等  </p>
+<blockquote>
+<p>换热表面上沉积物的形成，与液体主物流的温度无关，而取决于管壁表面的液膜温度。在物流的平均温度下，原以为不可能析出沉淀物的却在水侧生成水垢、或在油侧析出石蜡等，原因即在于此。  </p>
+</blockquote>
+</li>
+</ul>
+<p>防止生成沉淀物的主要因素不在于物流的温度，而在于物流的速度。当物流速度超过3m/s时．结垢热阻趋于零。  </p>
+<hr />
+<p><strong>换热面积</strong>  </p>
+<p>推算、查表《冷换》P17。</p>
+<h2 id="_4">管内膜传热系数及压力降</h2>
+<h3 id="_5">管内膜传热系数</h3>
+<p><strong>光管</strong>  </p>
+<ul>
+<li>雷诺准数<span><span class="MathJax_Preview">Re_i</span><script type="math/tex">Re_i</script></span>  </li>
+</ul>
+<p>
+<script type="math/tex; mode=display"> Re_i = \frac{du \rho}{\mu} = \frac{d_i \cdot G_i}{\mu_{iD}} </script>
+<br />
+<span><span class="MathJax_Preview">d_i</span><script type="math/tex">d_i</script></span>管内径<span><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span>，<span><span class="MathJax_Preview">\mu_{iD}</span><script type="math/tex">\mu_{iD}</script></span>定性温度下介质粘度<span><span class="MathJax_Preview">Pa\cdot s</span><script type="math/tex">Pa\cdot s</script></span>，<span><span class="MathJax_Preview">G_i</span><script type="math/tex">G_i</script></span>管内流体质量流速<span><span class="MathJax_Preview">kg/(m^2 \cdot s)</span><script type="math/tex">kg/(m^2 \cdot s)</script></span><br />
+<script type="math/tex; mode=display"> G_i = \frac{W_i}{S_i} </script>
+<br />
+<span><span class="MathJax_Preview">W_i</span><script type="math/tex">W_i</script></span>管内流体流率<span><span class="MathJax_Preview">kg/s</span><script type="math/tex">kg/s</script></span>，<span><span class="MathJax_Preview">S_i</span><script type="math/tex">S_i</script></span>管程流通面积<span><span class="MathJax_Preview">m^2</span><script type="math/tex">m^2</script></span><br />
+<script type="math/tex; mode=display"> S_i = \frac{N}{N_{tp}} \cdot \frac{\pi}{4} d^2_i </script>
+<br />
+<span><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span>管子总数，<span><span class="MathJax_Preview">N_{tp}</span><script type="math/tex">N_{tp}</script></span>管程数  </p>
+<ul>
+<li>流体定性温度<span><span class="MathJax_Preview">(t_D)</span><script type="math/tex">(t_D)</script></span>  </li>
+</ul>
+<p>流体处于过渡区或湍流区<span><span class="MathJax_Preview">(Re_i&gt;2100)</span><script type="math/tex">(Re_i>2100)</script></span>时：<br />
+<script type="math/tex; mode=display"> t_D = 0.4 t_h + 0.6 t_c </script>
+<br />
+流体处于层流区<span><span class="MathJax_Preview">(Re_i \le 2100)</span><script type="math/tex">(Re_i \le 2100)</script></span>时：<br />
+<script type="math/tex; mode=display"> t_D = 0.5 (t_h + t_c) </script>
+</p>
+<ul>
+<li>普兰德准数<span><span class="MathJax_Preview">Pr_i</span><script type="math/tex">Pr_i</script></span>  </li>
+</ul>
+<p>
+<script type="math/tex; mode=display"> Pr_i = (\frac{C_p \cdot \mu}{\lambda})_{iD} </script>
+<br />
+定性温度下介质导热系数：<span><span class="MathJax_Preview">\lambda_{iD}</span><script type="math/tex">\lambda_{iD}</script></span>，<span><span class="MathJax_Preview">W/(m \cdot K)</span><script type="math/tex">W/(m \cdot K)</script></span>；<br />
+定性温度下介质比热容：<span><span class="MathJax_Preview">C_{piD}</span><script type="math/tex">C_{piD}</script></span>，<span><span class="MathJax_Preview">J/(kg \cdot K)</span><script type="math/tex">J/(kg \cdot K)</script></span>  </p>
+<ul>
+<li>管内膜传热系数  </li>
+</ul>
+<p>通用表达式：
+<script type="math/tex; mode=display">\begin{align}  
+Nu &= C \cdot (Re)^n \cdot (Pr)^{\frac{1}{3}} \cdot \phi  \\
+\frac{h \cdot d}{\lambda} &= C \cdot (\frac{d \cdot G}{\mu})^n \cdot (\frac{C_p \cdot \mu}{\lambda})^{\frac{1}{3}} \cdot \phi  \\
+&= J_H \cdot (\frac{C_p \cdot \mu}{\lambda})^{\frac{1}{3}} \cdot \phi
+\end{align}</script>
+</p>
+<p>对于以光管外表面积为基准的管内膜传热系数，有<br />
+<script type="math/tex; mode=display"> h_{io} = \frac{\lambda_{iD}}{d_0} \cdot J_{Hi} \cdot {Pr}^{\frac{1}{3}} \cdot \phi_i </script>
+</p>
+<p><span><span class="MathJax_Preview">J_H</span><script type="math/tex">J_H</script></span>管内传热因子，无因次；  <span><span class="MathJax_Preview">d_0</span><script type="math/tex">d_0</script></span>管外径，<span><span class="MathJax_Preview">m</span><script type="math/tex">m</script></span>；<br />
+<span><span class="MathJax_Preview">\phi</span><script type="math/tex">\phi</script></span>管程壁温校正系数，无因次；<br />
+<script type="math/tex; mode=display"> \phi_i = (\frac{\mu_{iD}}{\mu_W})^{0.14} </script>
+<br />
+<span><span class="MathJax_Preview">\mu_W</span><script type="math/tex">\mu_W</script></span>壁温下流体粘度，<span><span class="MathJax_Preview">Pa \cdot s</span><script type="math/tex">Pa \cdot s</script></span>;  </p>
+<p><span><span class="MathJax_Preview">J_{Hi}</span><script type="math/tex">J_{Hi}</script></span>传热因子的计算方法如下：  </p>
+<table>
+<thead>
+<tr>
+<th>流动状态</th>
+<th>计算式</th>
+<th>实验误差</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<script type="math/tex; mode=display"> 层流区 \qquad {Re}_i \le 2100 </script>
+</td>
+<td>
+<script type="math/tex; mode=display"> J_{Hi}=1.86 \cdot (Re)^{\frac{1}{3}}_i \cdot (\frac{d_i}{L})^{\frac{1}{3}} </script>
+</td>
+<td>
+<script type="math/tex; mode=display"> \pm 12\% </script>
+</td>
+</tr>
+<tr>
+<td>
+<script type="math/tex; mode=display"> 过渡区 \qquad 2100 \lt {Re}_i \lt (10)^4 </script>
+</td>
+<td>
+<script type="math/tex; mode=display"> J_{Hi}=0.116 \cdot \left((Re)^{\frac{2}{3}}_i -125 \right) \cdot \left(1+(\frac{d_i}{L})^{\frac{2}{3}}\right) </script>
+</td>
+<td>
+<script type="math/tex; mode=display"> - </script>
+</td>
+</tr>
+<tr>
+<td>
+<script type="math/tex; mode=display"> 湍流区 \qquad {Re}_i \ge (10)^4 </script>
+</td>
+<td>
+<script type="math/tex; mode=display"> J_{Hi}=0.023 \cdot (Re)^{0.8}_i </script>
+</td>
+<td>
+<script type="math/tex; mode=display"> 15\% ~ -10\% </script>
+</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><span><span class="MathJax_Preview">{Re}_i \le 2100</span><script type="math/tex">{Re}_i \le 2100</script></span>时，关联式结果偏保守，可将<span><span class="MathJax_Preview">J_{Hi}</span><script type="math/tex">J_{Hi}</script></span>因子乘以1.2~1.3倍校正  </p>
+</blockquote>
+<p>壁温<span><span class="MathJax_Preview">t_W</span><script type="math/tex">t_W</script></span>计算:<br />
+冷流体在管内：<br />
+<script type="math/tex; mode=display"> t_W = \frac{h_o}{h_o + h_{io}} \cdot (t_{oD}-t_{iD}) + t_{iD} </script>
+<br />
+热流体在管内：<br />
+<script type="math/tex; mode=display"> t_W = \frac{h_o}{h_o + h_{io}} \cdot (t_{iD}-t_{oD}) + t_{oD} </script>
+</p>
+<p><strong>波纹管</strong><br />
+波纹管管内膜传热系数是以光管管外表面积为基准，计算步骤与光管一样<br />
+管内膜传热系数：<br />
+<script type="math/tex; mode=display"> h_{io} = \frac{\lambda_{iD}}{d_0} \cdot J_{Hi} \cdot {Pr}^{\frac{1}{3}}_i \cdot \left(\frac{\epsilon}{d_i}\right)^{0.478} \cdot \left(\frac{s}{d_i}\right)^{-0.383} \cdot \phi_i </script>
+<br />
+<span><span class="MathJax_Preview">\epsilon</span><script type="math/tex">\epsilon</script></span>波高，m；<span><span class="MathJax_Preview">s</span><script type="math/tex">s</script></span>波距，m；<br />
+<span><span class="MathJax_Preview">J_{Hi}</span><script type="math/tex">J_{Hi}</script></span>传热因子的计算方法如下：  </p>
+<table>
+<thead>
+<tr>
+<th>流动状态</th>
+<th>计算式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<script type="math/tex; mode=display"> 层流区 \qquad {Re}_i \le 2500 </script>
+</td>
+<td>
+<script type="math/tex; mode=display"> J_{Hi}=0.1098 \cdot (Re)^{0.8653}_i </script>
+</td>
+</tr>
+<tr>
+<td>
+<script type="math/tex; mode=display"> 过渡区 \qquad 2500 \lt {Re}_i \lt 12000 </script>
+</td>
+<td>
+<script type="math/tex; mode=display"> J_{Hi}=0.2475 \cdot (Re)^{0.7747}_i </script>
+</td>
+</tr>
+<tr>
+<td>
+<script type="math/tex; mode=display"> 湍流区 \qquad {Re}_i \ge 12000 </script>
+</td>
+<td>
+<script type="math/tex; mode=display"> J_{Hi}=0.7872 \cdot (Re)^{0.6446}_i </script>
+</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>公式的实验误差在&plusmn;10%以内  </p>
+</blockquote>
+<p><strong>交叉锯齿带内插物管</strong><br />
+《冷换》P21  </p>
+<h3 id="_6">管程压力降</h3>
+<p>
+<script type="math/tex; mode=display"> \Delta P_t = (\Delta P_i + \Delta P_r)\cdot F_i + \Delta P_{Ni} </script>
+<br />
+<span><span class="MathJax_Preview">\Delta P_i</span><script type="math/tex">\Delta P_i</script></span>——直管压力降，Pa；<br />
+<span><span class="MathJax_Preview">\Delta P_r</span><script type="math/tex">\Delta P_r</script></span>——弯管压力降，Pa；<br />
+<span><span class="MathJax_Preview">\Delta P_{Ni}</span><script type="math/tex">\Delta P_{Ni}</script></span>——进出口管嘴压力降，Pa；<br />
+<span><span class="MathJax_Preview">F_T</span><script type="math/tex">F_T</script></span>——管程压降结垢校正系数  </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../snt/" title="管壳式换热器/Shell & Tube Exchanger" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                管壳式换热器/Shell & Tube Exchanger
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../reboiler/" title="重沸器（再沸器）/Reboiler" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                重沸器（再沸器）/Reboiler
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; 2019 王若鹏 All rights reserved.
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.a8b5e56f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
