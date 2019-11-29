@@ -1,7 +1,8 @@
 git init
 git add remote https://github.com/rapon233/ChemWiKi
 git add .
-git commit -m "first commit"
+git commit -m "anchor"
+git pull origin master --allow-unrelated-histories
 git push origin master
 
 git config --global user.name "rapon233" 
