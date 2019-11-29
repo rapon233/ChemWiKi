@@ -1,0 +1,12 @@
+git init
+git add remote https://github.com/rapon233/ChemWiKi
+git add .
+git commit -m "first commit"
+git push origin master
+
+git config --global user.name "rapon233" 
+git config --global user.email "wruopeng@gmail.com"
+
+ssh-keygen -t rsa
+
+ssh -T git@github.com
