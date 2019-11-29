@@ -9,4 +9,8 @@ git config --global user.email "wruopeng@gmail.com"
 
 ssh-keygen -t rsa
 
-ssh -T git@github.com
+
+git remote rm origin
+git remote add origin https://github.com/rapon233/ChemWiKi
+git pull origin master
+git pull origin master --allow-unrelated-histories
