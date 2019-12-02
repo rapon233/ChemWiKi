@@ -52,6 +52,7 @@ $$ Q=W \cdot C_p \cdot (T_1 -T_2) $$
 $$ \Delta T_m = \frac{(\Delta t_h + \Delta t_c)}{2}=\frac{(T_1 - t_2) + (T_2 - t_1)}{2} $$  
 当$|(\Delta t_h / \Delta t_c)-1| > 0.1$时，
 $$ \Delta T_m = \frac{(\Delta t_h - \Delta t_c)}{ln(\frac{\Delta t_h}{\Delta t_c})}=\frac{(T_1 - t_2) - (T_2 - t_1)}{ln(\frac{T_1 - t_2}{T_2 - t_1})} $$  
+<span id="FT"></span>   
   
 2.对数平均温差校正系数$(F_T)$
 
@@ -93,7 +94,6 @@ $$ \Delta T = \Delta T_m \cdot F_T $$
 **换热面积**  
 
 推算、查表《冷换》P17。
-
 
 ## 管内膜传热系数及压力降
 ### 管内膜传热系数
@@ -157,6 +157,7 @@ $$ t_W = \frac{h_o}{h_o + h_{io}} \cdot (t_{iD}-t_{oD}) + t_{oD} $$
 
 **波纹管**  
 波纹管管内膜传热系数是以光管管外表面积为基准，计算步骤与光管一样  
+<span id="hio"></span>   
 管内膜传热系数：  
 $$ h_{io} = \frac{\lambda_{iD}}{d_0} \cdot J_{Hi} \cdot {Pr}^{\frac{1}{3}}_i \cdot \left(\frac{\epsilon}{d_i}\right)^{0.478} \cdot \left(\frac{s}{d_i}\right)^{-0.383} \cdot \phi_i $$  
 $\epsilon$波高，m；$s$波距，m；  
@@ -241,9 +242,14 @@ $F_T$——管程压降结垢校正系数
 2.初步选型和详细计算步骤    
     计算热负荷  
     计算对数平均温差$\Delta T_m$    
-    确定最少串联壳体数  
+    确定最少串联壳体数$N_s$  
     根据冷热物流特性，选取[总传热系数K](#总传热系数)    
     求出总传热面积$A_d$     
+    根据$N_s$和$A_d$求出初步估算的每台换热器所需面积$A_0$   
+    根据用户对换热器类型的要求，选择合适的设备型号，进行有效[平均温差校正系数](#FT)、[传热系数](#hio)和压力降的详细计算  
+    检查计算总传热系数与选用总传热系数的相对误差，如果大于$\pm 25 \%$，建议调整总传热系数的经验选用值；检查管壳程压力降结果，超过允许压降，调整相应几何参数，重新选型   
+    
+
 
 
 

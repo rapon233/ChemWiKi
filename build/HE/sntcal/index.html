@@ -680,7 +680,8 @@
 <br />
 当<span><span class="MathJax_Preview">|(\Delta t_h / \Delta t_c)-1| &gt; 0.1</span><script type="math/tex">|(\Delta t_h / \Delta t_c)-1| > 0.1</script></span>时，
 <script type="math/tex; mode=display"> \Delta T_m = \frac{(\Delta t_h - \Delta t_c)}{ln(\frac{\Delta t_h}{\Delta t_c})}=\frac{(T_1 - t_2) - (T_2 - t_1)}{ln(\frac{T_1 - t_2}{T_2 - t_1})} </script>
-</p>
+<br />
+<span id="FT"></span>   </p>
 <p>2.对数平均温差校正系数<span><span class="MathJax_Preview">(F_T)</span><script type="math/tex">(F_T)</script></span></p>
 <p><span><span class="MathJax_Preview">F_T</span><script type="math/tex">F_T</script></span>值不得小于0.8<br />
 应当增加壳程串联数，或重新调整冷热物流出口温度</p>
@@ -825,6 +826,7 @@ Nu &= C \cdot (Re)^n \cdot (Pr)^{\frac{1}{3}} \cdot \phi  \\
 </p>
 <p><strong>波纹管</strong><br />
 波纹管管内膜传热系数是以光管管外表面积为基准，计算步骤与光管一样<br />
+<span id="hio"></span> <br />
 管内膜传热系数：<br />
 <script type="math/tex; mode=display"> h_{io} = \frac{\lambda_{iD}}{d_0} \cdot J_{Hi} \cdot {Pr}^{\frac{1}{3}}_i \cdot \left(\frac{\epsilon}{d_i}\right)^{0.478} \cdot \left(\frac{s}{d_i}\right)^{-0.383} \cdot \phi_i </script>
 <br />
@@ -928,9 +930,12 @@ Nu &= C \cdot (Re)^n \cdot (Pr)^{\frac{1}{3}} \cdot \phi  \\
 2.初步选型和详细计算步骤  <br />
     计算热负荷<br />
     计算对数平均温差<span><span class="MathJax_Preview">\Delta T_m</span><script type="math/tex">\Delta T_m</script></span>  <br />
-    确定最少串联壳体数<br />
+    确定最少串联壳体数<span><span class="MathJax_Preview">N_s</span><script type="math/tex">N_s</script></span><br />
     根据冷热物流特性，选取<a href="#总传热系数">总传热系数K</a>  <br />
-    求出总传热面积<span><span class="MathJax_Preview">A_d</span><script type="math/tex">A_d</script></span>     </p>
+    求出总传热面积<span><span class="MathJax_Preview">A_d</span><script type="math/tex">A_d</script></span>   <br />
+    根据<span><span class="MathJax_Preview">N_s</span><script type="math/tex">N_s</script></span>和<span><span class="MathJax_Preview">A_d</span><script type="math/tex">A_d</script></span>求出初步估算的每台换热器所需面积<span><span class="MathJax_Preview">A_0</span><script type="math/tex">A_0</script></span> <br />
+    根据用户对换热器类型的要求，选择合适的设备型号，进行有效<a href="#FT">平均温差校正系数</a>、<a href="#hio">传热系数</a>和压力降的详细计算<br />
+    检查计算总传热系数与选用总传热系数的相对误差，如果大于<span><span class="MathJax_Preview">\pm 25 \%</span><script type="math/tex">\pm 25 \%</script></span>，建议调整总传热系数的经验选用值；检查管壳程压力降结果，超过允许压降，调整相应几何参数，重新选型   </p>
                 
                   
                 
