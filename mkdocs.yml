@@ -7,7 +7,10 @@ nav:
         - '总述': HE/换热器总述.md 
         - '管壳式换热器/Shell & Tube Exchanger': HE/snt.md  
         - '管壳式换热器计算方法': HE/sntcal.md  
-        - '重沸器（再沸器）/Reboiler': HE/reboiler.md
+        - '重沸器（再沸器）/Reboiler': HE/reboiler.md   
+    - Markdown:  
+        - 'Symbols/各类符号': MD/syb.md  
+        - 'LaTex': MD/latex.md  
 
 theme:
   name: 'material'
