@@ -1,6 +1,8 @@
 Symbols/各类符号    
 ## 标点符号
-`&plusmn;`  &plusmn;  正负号    
+`&plusmn;`：&plusmn;  正负号    
+`&deg;`：&deg;  
+`&deg;C`：&deg;C    或`&deg;F`：&deg;F  
 
 ## 空格符号
 `&nbsp;`  :222&nbsp;222  

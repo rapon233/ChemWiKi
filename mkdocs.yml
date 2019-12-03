@@ -3,6 +3,8 @@ copyright: '&copy; 2019 王若鹏 All rights reserved.'
 
 nav:
     - Home: index.md  
+    - 催化裂化:  
+        - 'FCC工艺简介': FCC\proc.md 
     - 换热器:  
         - '总述': HE/换热器总述.md 
         - '管壳式换热器/Shell & Tube Exchanger': HE/snt.md  
@@ -10,13 +12,15 @@ nav:
         - '重沸器（再沸器）/Reboiler': HE/reboiler.md   
     - Markdown:  
         - 'Symbols/各类符号': MD/syb.md  
-        - 'LaTex': MD/latex.md  
+        - 'LaTeX': MD/latex.md  
 
 theme:
   name: 'material'
 #include_search_page: true
 #search_index_only: false
-
+plugins:
+    - search
+    - git-revision-date
 extra_javascript:
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
 markdown_extensions:
@@ -26,4 +30,7 @@ markdown_extensions:
     - mdx_math
     - markdown_include.include:
         base_path: docs
+
+repo_url: https://github.com/rapon233/ChemWiKi
+repo_name: ChemWiKi
 site_dir: build  
