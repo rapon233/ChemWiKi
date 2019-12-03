@@ -126,6 +126,7 @@ Flue Gas Heat and Pressure Recovery Schemes
 烟气离开旋风分离器进入再生器顶部的集气室，高温烟气携带大量的能量，在一些装置中，烟气被送往CO锅炉，显热和燃烧热都被用于产生高压蒸汽；在另外一些装置中，烟气通过利用管壳式换热器或箱式换热器与锅炉给水换热以产生蒸汽；在一些大中型FCC装置中，可以利用烟机回收压力能。伴随着压力回收，烟气温度会降低约200&deg;F（93&deg;C）。为保护烟机叶片免受催化剂颗粒的侵蚀，烟气首先进入第三级分离器分离出催化剂粉尘。第三级分离器可以从烟气中分离出70%-95%的粉尘。    
 典型的烟气能量回收示意图    
 ![典型的烟气能量回收示意图](img\gaspowerrecover.PNG)    
+
 !!! note    
     Electrostatic precipitator`静电除尘器`； Wet gas scrubber`湿气洗涤塔`； Catalyst fines`催化剂粉尘`； Exhaust steam`乏汽`； Air blower`主风机`； Steam turbine`汽轮机`； Expander`烟机`     
 
@@ -145,6 +146,7 @@ Main Fractionator
 
 主分馏塔的作用是使高温反应油气降温并回收液体产品。从反应器出来的高温蒸气产物从靠近底部的位置进入主分馏塔。烃类蒸气在塔中向上流经塔板和（或）填料，通过烃组分的冷凝和重新气化而完成分馏过程。    
 ![主分馏塔](img\Main_Fractionator.PNG)  
+
 !!! note    
     Heavy cat naphtha`重石脑油`； Slurry oil`油浆`；     
 
