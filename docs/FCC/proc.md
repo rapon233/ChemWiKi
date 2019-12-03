@@ -144,7 +144,7 @@ Catalyst Handling Facilities
 Main Fractionator   
 
 主分馏塔的作用是使高温反应油气降温并回收液体产品。从反应器出来的高温蒸气产物从靠近底部的位置进入主分馏塔。烃类蒸气在塔中向上流经塔板和（或）填料，通过烃组分的冷凝和重新气化而完成分馏过程。    
-![主分馏塔](img\Main Fractionator.PNG)  
+![主分馏塔](img\Main_Fractionator.PNG)  
 !!! note    
     Heavy cat naphtha`重石脑油`； Slurry oil`油浆`；     
 
