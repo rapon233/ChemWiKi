@@ -159,7 +159,7 @@ $$ t_W = \frac{h_o}{h_o + h_{io}} \cdot (t_{iD}-t_{oD}) + t_{oD} $$
 波纹管管内膜传热系数是以光管管外表面积为基准，计算步骤与光管一样  
 <span id="hio"></span>   
 管内膜传热系数：  
-$$ h_{io} = \frac{\lambda_{iD}}{d_0} \cdot J_{Hi} \cdot {Pr}^{\frac{1}{3}}_i \cdot \left(\frac{\epsilon}{d_i}\right)^{0.478} \cdot \left(\frac{s}{d_i}\right)^{-0.383} \cdot \phi_i $$  
+$$ h_{io} = \frac{\lambda_{iD}}{d_0} \cdot J_{Hi} \cdot {Pr}^{\frac{1}{3}}_i \cdot \left(\frac{\varepsilon}{d_i}\right)^{0.478} \cdot \left(\frac{s}{d_i}\right)^{-0.383} \cdot \phi_i $$  
 $\epsilon$波高，m；$s$波距，m；  
 $J_{Hi}$传热因子的计算方法如下：  
 
