@@ -1,5 +1,6 @@
 site_name: ChemWiki  
-copyright: '&copy; 2019 王若鹏 All rights reserved.'  
+site_url: https://wiki.rapon.wang/
+copyright: 'Copyright &copy; 2019 王若鹏 All rights reserved.'  
 
 nav:
     - Home: index.md  
@@ -8,6 +9,7 @@ nav:
         - '控制设施': FCC\procctrl.md   
         - '催化裂化原料表征': FCC\feedcharacter.md
         - '催化裂化催化剂': FCC\FCCcat.md
+        - '装置的监控': FCC\monitor&ctrl.md
         - '产品与效益分析': FCC\products&eco.md
     - 换热器:  
         - '总述': HE/换热器总述.md 
@@ -17,6 +19,7 @@ nav:
     - Markdown:  
         - 'Symbols/各类符号': MD/syb.md  
         - 'LaTeX': MD/latex.md  
+        - 'Grammar': MD\grammar.md
 
 theme:
   name: 'material'
@@ -28,6 +31,8 @@ plugins:
 extra_javascript:
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
 markdown_extensions:
+    - toc:
+        permalink: "&para;"
     - markdown.extensions.admonition:
     - pymdownx.arithmatex:
     - pymdownx.details:

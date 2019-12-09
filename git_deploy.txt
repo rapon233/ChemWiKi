@@ -1,3 +1,5 @@
+https://rapon233.github.io/ChemWiKi/
+
 git init
 git add remote https://github.com/rapon233/ChemWiKi
 git add .
