@@ -17,6 +17,9 @@ nav:
         - '管壳式换热器/Shell & Tube Exchanger': HE/snt.md  
         - '管壳式换热器计算方法': HE/sntcal.md  
         - '重沸器（再沸器）/Reboiler': HE/reboiler.md   
+    - 泵:
+        - '总述': Pump\intro.md 
+        - '离心泵': Pump\Centpump.md
     - Markdown:  
         - 'Symbols/各类符号': MD/syb.md  
         - 'LaTeX': MD/latex.md  
