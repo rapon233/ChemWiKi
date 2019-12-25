@@ -21,7 +21,7 @@ git pull origin master --allow-unrelated-histories
 
 mkdocs gh-deploy
 git add .
-git commit -m "products&eco.md done"
+git commit -m "pump NPSH"
 git push origin master
 
 
