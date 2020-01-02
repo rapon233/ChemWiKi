@@ -30,6 +30,8 @@ $\LaTeX$Grammer/$\LaTeX$语法
 `$\lt \gt \le \leq \leqq \leqslant \ge \geq \geqq \geqslant \neq$`: $\lt \gt \le \leq \leqq \leqslant \ge \geq \geqq \geqslant \neq$    
 `$\approx \sim \simeq \cong \equiv \prec \lhd \therefore$`: $\approx \sim \simeq \cong \equiv \prec \lhd \therefore$    
 `$\to \rightarrow \leftarrow \Rightarrow \Leftarrow \mapsto$`: $\to \rightarrow \leftarrow \Rightarrow \Leftarrow \mapsto$      
+`$\sqrt{x} \sqrt[3]{x}$`: $\sqrt{x} \, \sqrt[3]{x}$
+
 
 
 ## 字母标记

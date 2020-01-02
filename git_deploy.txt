@@ -21,7 +21,7 @@ git pull origin master --allow-unrelated-histories
 
 mkdocs gh-deploy
 git add .
-git commit -m "centpump ss"
+git commit -m "aab"
 git push origin master
 
 
