@@ -1,4 +1,4 @@
-Symbols/各类符号    
+HTML Symbols/各类符号    
 ## 标点符号
 `&plusmn;`：&plusmn;  正负号    
 `&deg;`：&deg;  
