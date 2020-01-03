@@ -18,7 +18,8 @@ nav:
             - '管壳式换热器/Shell & Tube Exchanger': HE/snt.md  
             - '管壳式换热器计算方法': HE/sntcal.md  
             - '壳程流路分析计算法': HE\流路分析.md  
-        - '冷凝器': HE\冷凝器.md  
+        - 冷凝器: 
+            - '冷凝机理分析及设计考虑因素': HE\冷凝机理分析及设计考虑因素.md
         - '重沸器（再沸器）/Reboiler': HE/reboiler.md   
     - 泵:
         - '总述': Pump\intro.md 
