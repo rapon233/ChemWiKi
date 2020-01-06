@@ -20,7 +20,8 @@ nav:
             - '壳程流路分析计算法': HE\流路分析.md  
         - 冷凝器: 
             - '冷凝机理分析及设计考虑因素': HE\cdsmech&design.md  
-            - '结构特点以及几何参数': HE\cdsstructure.md    
+            - '冷凝器热负荷': HE\cdsheatduty.md    
+            - '水平管内冷凝传热和压力降': HE\cdspresdrop.md
         - '重沸器（再沸器）/Reboiler': HE/reboiler.md   
     - 泵:
         - '总述': Pump\intro.md 
@@ -54,4 +55,4 @@ markdown_extensions:
 
 repo_url: https://github.com/rapon233/ChemWiKi
 repo_name: ChemWiKi
-site_dir: build  
+site_dir: D:\学习笔记\mkdocssite\Chemwiki\  
