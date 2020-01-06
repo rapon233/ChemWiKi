@@ -1,8 +1,17 @@
 HTML Symbols/各类符号    
 ## 标点符号
-`&plusmn;`：&plusmn;  正负号    
+`&permil;`&permil;    
 `&deg;`：&deg;  
 `&deg;C`：&deg;C    或`&deg;F`：&deg;F  
+`&sect;`&sect;          
+`&lceil;`&lceil;          
+`&rceil;`&rceil;     
+`&lfloor;`&lfloor;    
+`&rfloor;`&rfloor;    
+`&loz;`&loz;   
+`&rArr;`&rArr;      
+`&lArr;`&lArr;  
+
 
 ## 空格符号
 `&nbsp;`  :222&nbsp;222  
@@ -23,6 +32,28 @@ HTML Symbols/各类符号
 `&zwj;`  :222&zwj;222   
   它叫零宽连字，全称是 Zero Width Joiner，简称“ZWJ”，是一个不打印字符，放在某些需要复杂排版语言（如阿拉伯语、印地语）的两个字符之间，使得这两个本不会发生连字的字符产生了连字效果。零宽连字符的Unicode码位是U+200D (HTML: ‍ ‍）。
 此外，浏览器还会把以下字符当作空白进行解析：空格（ ）、制表位（ ）、换行（ ）和回车（ ）还有（　）等等。
+
+## 符号实体
+`&plusmn;`：&plusmn;  正负号    
+`&divide;`&divide;    
+`&times;`&times;     
+`&sim;`&sim;   
+`&asymp;`&asymp;     
+`&cong;`&cong;  
+`&ne;`&ne;    
+`&le;`&le;    
+`&ge;`&ge;    
+`&equiv;`&equiv;    
+`&Delta;`&Delta;     
+`&nabla;`&nabla;     
+`&divide;`&divide;    
+`&forall;`&forall;    
+`&part;`&part;      
+`&#8707;`&#8707;    
+`&infin;`&infin;     
+`&prop;`&prop;  
+`&there4;`&there4;    
+
 
 
 -----

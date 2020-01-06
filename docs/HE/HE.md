@@ -20,6 +20,10 @@ Heat Exchanger/换热器
   高压时选用
 
 
+换热器可以采用多种不同的壳体形式，国标采用的是TEMA标准。TEMA对管壳式换热器壳体类型进行了规定。      
+<span id="TEMA">TEMA标准</span>     
+![TEMA标准](img/TEMA分类.PNG)   
+
 ### **板式**
 适合流量小、PT低、具有腐蚀性、粘度高的介质  
 
