@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://wiki.rapon.wang/HE/cdsstructure/">
+        <link rel="canonical" href="https://wiki.rapon.wang/HE/cdsheatduty/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>结构特点以及几何参数 - ChemWiki</title>
+        <title>冷凝器热负荷 - ChemWiki</title>
       
     
     
@@ -79,6 +79,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -101,7 +105,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                结构特点以及几何参数
+                冷凝器热负荷
               
             </span>
           
@@ -463,11 +467,61 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
     
-    <a href="./" title="结构特点以及几何参数" class="md-nav__link md-nav__link--active">
-      结构特点以及几何参数
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        冷凝器热负荷
+      </label>
+    
+    <a href="./" title="冷凝器热负荷" class="md-nav__link md-nav__link--active">
+      冷凝器热负荷
     </a>
     
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    纯组分或冷凝温降小的混合物冷凝
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    混合物冷凝
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cdspresdrop/" title="水平管内冷凝传热和压力降" class="md-nav__link">
+      水平管内冷凝传热和压力降
+    </a>
   </li>
 
         
@@ -608,17 +662,78 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    纯组分或冷凝温降小的混合物冷凝
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    混合物冷凝
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/rapon233/ChemWiKi/edit/master/docs/HE/cdsstructure.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/rapon233/ChemWiKi/edit/master/docs/HE/cdsheatduty.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>结构特点以及几何参数</h1>
-                
-                <p>结构特点以及几何参数</p>
+                <p>冷凝器</p>
+<h1 id="_1">冷凝器热负荷<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">纯组分或冷凝温降小的混合物冷凝<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>纯组分或冷凝温降小的混合物冷凝时的热负荷是<em>潜热</em>与<em>显热</em>负荷之和,如果存在过热或(和)过冷,则还需要加上过热负荷或(和)过冷负荷。冷凝温降小的混合物是指露点与泡点之差小的介质,此温差值一般不超过5&deg;C。  <br />
+冷凝段热负荷：<br />
+$$ Q_{con}=W_h \cdot {\Delta H_v \cdot (y_{in}-y_{out})+[Cp_l \cdot (1-y_{av})+Cp_v \cdot y_{av}] \cdot \Delta T_{con}} $$
+过热段热负荷：<br />
+$$ Q_{sh}= W_h \cdot Cp_{vs} \cdot \Delta T_{sh} $$
+过冷段热负荷：<br />
+$$ Q_{sc}= W_h \cdot Cp_{ls} \cdot \Delta T_{sc} $$
+总热负荷：<br />
+$$ Q= Q_{con}+Q_{sh}+Q_{sc} $$</p>
+<div class="admonition info">
+<p><span><span class="MathJax_Preview">W_h</span><script type="math/tex">W_h</script></span>：冷凝介质总质量流率（液相与气相之和）；   <br />
+<span><span class="MathJax_Preview">Cp</span><script type="math/tex">Cp</script></span>：比热； <br />
+<span><span class="MathJax_Preview">y</span><script type="math/tex">y</script></span>：气相分率； <br />
+<span><span class="MathJax_Preview">\Delta T_{con}</span><script type="math/tex">\Delta T_{con}</script></span>：冷凝段温差；    </p>
+</div>
+<h2 id="_3">混合物冷凝<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>混合物冷凝由于其复杂性,尤其是组分较多，因此需要用专门的软件进行相平衡计算,得出不同温度压力下焓、汽相分率、汽液相物性等参数,在此基础上才能进行冷凝器设计。 <br />
+混合物冷凝时由于汽相分率、焓随温度的变化通常不是线性关系,有时甚至呈强烈的非线性,因此采用进出口平均条件计算将会带来很大的误差。为了计算的准确性,混合物冷凝一般需要采用<strong>分段计算方法</strong>,即将整个冷凝过程分成若干小段,分别计算每一小段的传热性能,然后按一定的方法加和起来,得到冷凝过程的整体性能。     </p>
+<blockquote>
+<p>从准确度考虑,分段越多计算结果越准确,但计算的工作量也越大。当然分段太少的话,偏离实际太远,其结果的可信度较差,尤其对含水体系更是如此。     </p>
+</blockquote>
+<p>在分段时根据混合物比焓、汽相分率随温度变化关系,尽量使每一段的热负荷比较接近。各段的热负荷及Δy/ΔT由冷凝曲线数据计算。如果没有平均汽化潜热数据,也可以根据冷凝曲线数据推算出来。</p>
+<p>混合物冷凝时采用分段计算,假设冷凝部分分为N段(N≥2),即冷凝部分有N+1个温度切割点,存在过热和/(或)过冷时,需加上过热段和/(或)过冷段。计算热负荷时用每段端点温度对应的比焓值,比焓值由冷凝曲线数据提供。P92     </p>
 <hr />
 <p>最近的修改: 2020-01-06</p>
                 
@@ -656,13 +771,13 @@
           </a>
         
         
-          <a href="../reboiler/" title="重沸器（再沸器）/Reboiler" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../cdspresdrop/" title="水平管内冷凝传热和压力降" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                重沸器（再沸器）/Reboiler
+                水平管内冷凝传热和压力降
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
