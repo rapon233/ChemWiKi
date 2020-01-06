@@ -61,7 +61,12 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://wiki.rapon.wang/HE/冷凝机理分析及设计考虑因素/</loc>
+     <loc>https://wiki.rapon.wang/HE/cdsmech&design/</loc>
+     <lastmod>2020-01-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wiki.rapon.wang/HE/cdsstructure/</loc>
      <lastmod>2020-01-06</lastmod>
      <changefreq>daily</changefreq>
     </url>

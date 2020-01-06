@@ -21,7 +21,7 @@ git pull origin master --allow-unrelated-histories
 
 mkdocs gh-deploy
 git add .
-git commit -m "冷凝"
+git commit -m "机理 finish"
 git push origin master
 
 

@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://wiki.rapon.wang/HE/冷凝机理分析及设计考虑因素/">
+        <link rel="canonical" href="https://wiki.rapon.wang/HE/cdsmech&design/">
       
       
       
@@ -593,6 +593,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    总传热系数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    冷凝传热的影响因素
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -606,6 +620,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cdsstructure/" title="结构特点以及几何参数" class="md-nav__link">
+      结构特点以及几何参数
+    </a>
   </li>
 
         
@@ -876,6 +902,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    总传热系数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    冷凝传热的影响因素
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -897,7 +937,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/rapon233/ChemWiKi/edit/master/docs/HE/冷凝机理分析及设计考虑因素.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/rapon233/ChemWiKi/edit/master/docs/HE/cdsmech&design.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 <p>冷凝器</p>
@@ -1008,9 +1048,23 @@ $$ q= h_{v} \cdot (T_v-T_{if}) $$</p>
 <p>冷凝介质的温度曲线有时可能是严重的非线性,当采用多管程布置时,就可能产生预料不到的&ensp;局部温度交叉&ensp;或&ensp;传热温差过低&ensp;的问题。设计冷凝器时,如果出现温度交叉,即冷却介质出口温度高于冷凝介质出口温度时,除非是单管程逆流方式可用单台冷凝器外,其它情况均需要采用多台串联,并分开逐台进行设计。   </p>
 <p>如果冷凝液排泄管太小,冷凝液流到排泄管的通道受到阻塞,或者是冷凝器压力降过大,使冷凝器出口压力低于贮罐压力,就可能出现&ensp;冷凝液液泛。&ensp;为了防止后一种情况出现,在贮罐和冷凝液排泄管上部的蒸汽空间安装压力平衡管。   <br />
 另一个可能的冷凝液液泛问题是管子之间冷凝液的桥接,产生的原因是液体负荷过大以及大管束中管子间距过小。     </p>
-<p>浮头式冷凝器可以采用多种不同的壳体型式,国标采用的是 TEMA J型壳体(参见<a href="../HE/#TEMA">图</a>),即蒸汽由左右两边的管嘴进入,冷凝液由位于底部中间的管嘴流出。折流板可采用单弓板和双弓板,主要取决于允许的压力降。对含不凝气的混合物冷凝,最好选用单弓板,</p>
+<p>浮头式冷凝器可以采用多种不同的壳体型式,国标采用的是 TEMA J型壳体(参见<a href="../HE/#TEMA">图</a>),即蒸汽由左右两边的管嘴进入,冷凝液由位于底部中间的管嘴流出。折流板可采用单弓板和双弓板,主要取决于允许的压力降。对含不凝气的混合物冷凝,最好选用单弓板,以保持较高的流速。另外,为了保证冷凝器出口的流速较高,在冷凝器出口端可以逐渐减小折流板间距。  <br />
+对浮头式折流杆冷凝器,介质在壳程顺管束流动,压力降特别低,采用单进单出的外导流筒形式。为了达到较高的冷凝速率,可以提高介质速度,而不会产生太大的压力降。     </p>
+<h3 id="_16">总传热系数<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p>总传热系数中的热阻包括壳程传热热阻、管程传热热阻、垢阻和管壁热阻。材料和规格确定后管壁热阻的值就定了;垢阻的取值可参考第一章;管程、壳程的传热阻力只有在设备确定后才能采用相关的方法计算。  <br />
+因此,设计冷凝器时先估选一个经验总传热系数K值,根据此K值估算换热面积并选用型号,最后再核算传热系数是否与原先估选的数值相接近。     </p>
+<h3 id="_17">冷凝传热的影响因素<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>有很多因素会对冷凝传热产生影响，如不凝气、气体流速、气流方向、液膜雷诺数、管子排数、过热度和过冷度等。      </p>
+<ul>
+<li>不凝气:不凝气的存在对冷凝传热将会产生十分不利的影响,<code>如水蒸气中含1%(质量)的空气将使冷凝膜传热系数下降60%</code>因为随着蒸汽冷凝,在界面处的不凝气浓度不断增加,蒸汽在抵达液膜表面冷凝前,必须以扩散方式穿过聚积在界面附近的不凝气层,&lceil;增加了传热阻力&rfloor;;另一方面蒸汽分压的下降,使得相应的饱和温度下降,从而&lceil;减小了冷凝温差推动力&rfloor;。因此在冷凝器设计中,避免不凝气集结是很重要的。    </li>
+<li>气体流速:气体流速对冷凝传热的影响在低流速时可忽略不计,但在高流速时,气流会对液膜表面产生明显的粘滞应力。在工业操作的流速范围内,气体流速对冷凝传热系数的影响极小。    </li>
+<li>气流方向:如果气流方向与液膜流动方向一致时,使液膜拉薄,对冷凝传热有利;相反则会使液膜加厚,使得冷凝传热效率下降。     </li>
+<li>液膜雷诺数:在层流区,冷凝传热系数随液膜雷诺数的增加而减小,这与无相变换热器不同,在设计时应加以考虑。    </li>
+<li>管子排数:在换热管束管外冷凝时,上排管子的冷凝液会滴落到下排管,将使下排管的冷凝传热效率下降,但冷凝液滴落时会产生飞溅以及对液膜的冲击扰动,又使得下排管的冷凝传热得以强化,因此在设计时应综合考虑。    </li>
+</ul>
+<p>过热度和过冷度在前面已进行了说明,在此不再重复。   </p>
 <hr />
-<p>最近的修改: 2020-01-03</p>
+<p>最近的修改: 2020-01-06</p>
                 
                   
                 
@@ -1046,13 +1100,13 @@ $$ q= h_{v} \cdot (T_v-T_{if}) $$</p>
           </a>
         
         
-          <a href="../reboiler/" title="重沸器（再沸器）/Reboiler" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../cdsstructure/" title="结构特点以及几何参数" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                重沸器（再沸器）/Reboiler
+                结构特点以及几何参数
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
