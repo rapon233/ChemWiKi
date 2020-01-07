@@ -782,19 +782,31 @@ $$ J_{tf}=\dfrac{y\cdot G_t}{[d_i \cdot g \cdot \rho_v(\rho_l-\rho_v)]^{0.5}} $$
 <p>0.5&lt;<span><span class="MathJax_Preview">J_{tf}</span><script type="math/tex">J_{tf}</script></span>&lt;1.5,为过渡区。如果冷凝处在过渡区,先分别按剪力控制流动和重力控制流动计算出<span><span class="MathJax_Preview">h_{si}</span><script type="math/tex">h_{si}</script></span>和<span><span class="MathJax_Preview">h_{gi}</span><script type="math/tex">h_{gi}</script></span>,然后进行经验插值。   </p>
 <h2 id="_6">水平管内气相传热系数<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p>多组分混合物及含不凝气介质冷凝过程同时存在着传热、传质和动量传递过程。下图是此过程的机理性步骤及近管壁区域中的温度、组分浓度分布。冷凝过程按下列步骤进行: <br />
-所有组分向冷凝液膜界面扩散&rArr;汽相冷却到界面处汽体混合物的冷凝温度&rArr;在界面处重分子冷凝、轻分子浓缩&rArr;轻组分向远离该界面方向扩散。<br />
 <img alt="多组分冷凝机理" src="../img/多组分冷凝机理.PNG" /> <br />
-通过液膜的热通量：<br />
+所有组分向冷凝液膜界面扩散&emsp;&rArr;&emsp;汽相冷却到界面处汽体混合物的冷凝温度  <br />
+&rArr;&emsp;在界面处重分子冷凝、轻分子浓缩&emsp;&rArr;&emsp;轻组分向远离该界面方向扩散。  </p>
+<p>通过液膜的热通量：<br />
 $$ q_l=h_{cf}(T_{if}-T_w) $$
 通过气相的热通量：  <br />
 $$ q_{sv} = h_{sv}(T_v -T_{if}) $$
 局部热通量：  <br />
 $$ q_t=h_c(T_v-T_w) $$
 各传热系数之间的关系：  </p>
-<p>\begin{align}
-\frac{1}{h_c}&amp;=\frac{1}{h_{cf}}+\frac{1}{h_{sv}}\cdot \frac{q_{sv}}{q_t} \
-\frac{1}{h_c}&amp;=\frac{1}{h_{cf}}+\frac{1}{h_{v}} 
-\eng{align}</p>
+<div>
+<div class="MathJax_Preview">\begin{align}   
+\frac{1}{h_c}&amp;=\frac{1}{h_{cf}}+\frac{1}{h_{sv}}\cdot \frac{q_{sv}}{q_t} \\
+\frac{1}{h_v}&amp;=\frac{1}{h_{sv}}\cdot \frac{q_{sv}}{q_t} \\
+\frac{1}{h_c}&amp;=\frac{1}{h_{cf}}+\frac{1}{h_{v}} \\
+h_v &amp;= h_{sv} \cdot (1+\phi_d)
+\end{align}</div>
+<script type="math/tex; mode=display">\begin{align}   
+\frac{1}{h_c}&=\frac{1}{h_{cf}}+\frac{1}{h_{sv}}\cdot \frac{q_{sv}}{q_t} \\
+\frac{1}{h_v}&=\frac{1}{h_{sv}}\cdot \frac{q_{sv}}{q_t} \\
+\frac{1}{h_c}&=\frac{1}{h_{cf}}+\frac{1}{h_{v}} \\
+h_v &= h_{sv} \cdot (1+\phi_d)
+\end{align}</script>
+</div>
+<p>扩散函数<span><span class="MathJax_Preview">\phi</span><script type="math/tex">\phi</script></span>是潜热通量与显热通量的函数,将汽相的传质与汽相显热传热关联起来。扩散函数<span><span class="MathJax_Preview">\phi</span><script type="math/tex">\phi</script></span>采用热平衡和汽、液平衡计算近似得到。   </p>
 <hr />
 <p>最近的修改: 2020-01-07</p>
                 
