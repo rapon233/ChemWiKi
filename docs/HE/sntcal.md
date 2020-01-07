@@ -123,11 +123,12 @@ $$ Pr_i = (\frac{C_p \cdot \mu}{\lambda})_{iD} $$
 
 * 管内膜传热系数  
 
-通用表达式：
+通用表达式：    
+
 \begin{align}  
-Nu &= C \cdot (Re)^n \cdot (Pr)^{\frac{1}{3}} \cdot \phi  \\
-\frac{h \cdot d}{\lambda} &= C \cdot (\frac{d \cdot G}{\mu})^n \cdot (\frac{C_p \cdot \mu}{\lambda})^{\frac{1}{3}} \cdot \phi  \\
-&= J_H \cdot (\frac{C_p \cdot \mu}{\lambda})^{\frac{1}{3}} \cdot \phi
+    Nu = & C \cdot (Re)^n \cdot (Pr)^{\frac{1}{3}} \cdot \phi \\
+    \frac{h \cdot d}{\lambda} = & C \cdot \left(\frac{d \cdot G}{\mu}\right)^n \cdot \left(\frac{Cp \cdot \mu}{\lambda}\right)^{\frac{1}{3}} \cdot \phi \\
+    = & J_H \cdot \left(\frac{Cp \cdot \mu}{\lambda}\right)^{\frac{1}{3}} \cdot \phi   
 \end{align}  
 
 对于以光管外表面积为基准的管内膜传热系数，有  

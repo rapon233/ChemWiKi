@@ -55,4 +55,4 @@ markdown_extensions:
 
 repo_url: https://github.com/rapon233/ChemWiKi
 repo_name: ChemWiKi
-site_dir: D:\学习笔记\mkdocssite\Chemwiki\  
+site_dir: build  
