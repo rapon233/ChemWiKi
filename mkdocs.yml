@@ -30,14 +30,18 @@ nav:
         - 'Symbols/各类符号': MD/syb.md  
         - 'LaTeX': MD/latex.md  
         - 'Grammar': MD\grammar.md
+    - 杂项: 
+        - 'Negotiation': Other\MOOC_Negotiation.md   
+
 
 theme:
-  name: 'material'
+    name: 'material'
+
 #include_search_page: true
 #search_index_only: false
 plugins:
     - search
-    - git-revision-date
+#    - git-revision-date
 extra_javascript:
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 markdown_extensions:

@@ -103,7 +103,7 @@ $$ \Delta T = \Delta T_m \cdot F_T $$
   
 $$ Re_i = \frac{du \rho}{\mu} = \frac{d_i \cdot G_i}{\mu_{iD}} $$  
 $d_i$管内径$m$，$\mu_{iD}$定性温度下介质粘度$Pa\cdot s$，$G_i$管内流体质量流速$kg/(m^2 \cdot s)$  
-$$ G_i = \frac{W_i}{S_i} $$  
+$$ G_i = \frac{W_i}{S_i}=\rho v $$  
 $W_i$管内流体流率$kg/s$，$S_i$管程流通面积$m^2$  
 $$ S_i = \frac{N}{N_{tp}} \cdot \frac{\pi}{4} d^2_i $$  
 $N$管子总数，$N_{tp}$管程数  
@@ -185,7 +185,8 @@ $\Delta P_{Ni}$——进出口管嘴压力降，Pa；
 $F_T$——管程压降结垢校正系数  
 
 **直管管程压力降**  
-
+$$ \Delta P = \frac{1}{2}V^2\cdot\rho\cdot\frac{L}{d}\cdot f $$
+$$ \Delta P_i = \frac{G_i^2}{2\rho_{iD}}\cdot\frac{L\cdot N_{tp}}{d_i}\cdot\frac{f_i}{\phi_i} $$
 **回弯压力降**  
 
 **进出口管嘴压力降**
