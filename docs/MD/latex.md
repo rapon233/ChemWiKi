@@ -37,7 +37,12 @@ $\LaTeX$Grammer/$\LaTeX$语法
 ## 字母标记
 `$\dot{m}$`: $\dot{m}$      
 
+## 化学式
+`\ce{}`: Chemistry Equation     
+`$\ce{2CH4 + 4O2 ->[Cat] 2CO2 + 4H2O}$`: \\(\ce{2CH4 + 4O2 ->[Cat] 2CO2 + 4H2O}\\)    
 
+  $$ \ce{2CH4 + 4O2 ->[Cat] 2CO2 + 4H2O} $$   
+  $$ \ce{CH2CH=CH2CH3 + CH3CH=CHCH3 ->[Cat] CH2=CHCH3 + CH3CH=CHCH2CH3} $$
 -----
 
 最近的修改: {{ git_revision_date }}

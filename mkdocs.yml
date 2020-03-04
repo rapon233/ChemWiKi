@@ -12,6 +12,9 @@ nav:
         - '装置的监控': FCC\monitor&ctrl.md
         - '产品与效益分析': FCC\products&eco.md
         - '项目执行与项目管理': FCC\pm.md
+    - 甲醇制烯烃（MTO）:    
+        - '烯烃生产技术概述': MTO\olefins.md
+        - 'MTO技术的研究与发展': MTO\R&D.md
     - 换热器:  
         - '总述': HE/HE.md   
         - 管壳式换热器:  
@@ -30,6 +33,7 @@ nav:
         - 'Symbols/各类符号': MD/syb.md  
         - 'LaTeX': MD/latex.md  
         - 'Grammar': MD\grammar.md
+        - 'TEST': MD\TEST.md
     - 杂项: 
         - 'Negotiation': Other\MOOC_Negotiation.md   
 
@@ -43,17 +47,23 @@ plugins:
     - search
 #    - git-revision-date
 extra_javascript:
-    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+#    - 'javascripts\flu.js'
+#    - 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+#    - 'javascripts\mathjax.js'
+#    - 'https://polyfill.io/v3/polyfill.min.js?features=es6'
+#    - 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js'
+   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 markdown_extensions:
     - toc:
         permalink: "&para;"
-    - markdown.extensions.admonition:
-    - pymdownx.arithmatex:
-    - pymdownx.details:
-    - pymdownx.superfences:
+    - markdown.extensions.admonition
+    - pymdownx.arithmatex
+    - pymdownx.details
+    - pymdownx.superfences
     - pymdownx.mark:
         smart_mark: false
-#    - mdx_math:
+    - pymdownx.tilde
+#    - mdx_math
     - markdown_include.include:
         base_path: docs
 
