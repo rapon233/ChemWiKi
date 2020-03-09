@@ -361,6 +361,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MTO/R%26D/" title="MTO技术的研究与发展" class="md-nav__link">
+      MTO技术的研究与发展
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -686,6 +698,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../MD/TEST/" title="TEST" class="md-nav__link">
+      TEST
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -784,14 +808,26 @@
 <h1 id="_1">冷凝器热负荷<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="_2">纯组分或冷凝温降小的混合物冷凝<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>纯组分或冷凝温降小的混合物冷凝时的热负荷是<em>潜热</em>与<em>显热</em>负荷之和,如果存在过热或(和)过冷,则还需要加上过热负荷或(和)过冷负荷。冷凝温降小的混合物是指露点与泡点之差小的介质,此温差值一般不超过5&deg;C。  <br />
-冷凝段热负荷：<br />
-$$ Q_{con}=W_h \cdot {\Delta H_v \cdot (y_{in}-y_{out})+[Cp_l \cdot (1-y_{av})+Cp_v \cdot y_{av}] \cdot \Delta T_{con}} $$
-过热段热负荷：<br />
-$$ Q_{sh}= W_h \cdot Cp_{vs} \cdot \Delta T_{sh} $$
-过冷段热负荷：<br />
-$$ Q_{sc}= W_h \cdot Cp_{ls} \cdot \Delta T_{sc} $$
-总热负荷：<br />
-$$ Q= Q_{con}+Q_{sh}+Q_{sc} $$</p>
+冷凝段热负荷：  </p>
+<div>
+<div class="MathJax_Preview"> Q_{con}=W_h \cdot \{\Delta H_v \cdot (y_{in}-y_{out})+[Cp_l \cdot (1-y_{av})+Cp_v \cdot y_{av}] \cdot \Delta T_{con}\} </div>
+<script type="math/tex; mode=display"> Q_{con}=W_h \cdot \{\Delta H_v \cdot (y_{in}-y_{out})+[Cp_l \cdot (1-y_{av})+Cp_v \cdot y_{av}] \cdot \Delta T_{con}\} </script>
+</div>
+<p>过热段热负荷：  </p>
+<div>
+<div class="MathJax_Preview"> Q_{sh}= W_h \cdot Cp_{vs} \cdot \Delta T_{sh} </div>
+<script type="math/tex; mode=display"> Q_{sh}= W_h \cdot Cp_{vs} \cdot \Delta T_{sh} </script>
+</div>
+<p>过冷段热负荷：  </p>
+<div>
+<div class="MathJax_Preview"> Q_{sc}= W_h \cdot Cp_{ls} \cdot \Delta T_{sc} </div>
+<script type="math/tex; mode=display"> Q_{sc}= W_h \cdot Cp_{ls} \cdot \Delta T_{sc} </script>
+</div>
+<p>总热负荷：  </p>
+<div>
+<div class="MathJax_Preview"> Q= Q_{con}+Q_{sh}+Q_{sc} </div>
+<script type="math/tex; mode=display"> Q= Q_{con}+Q_{sh}+Q_{sc} </script>
+</div>
 <div class="admonition info">
 <p><span><span class="MathJax_Preview">W_h</span><script type="math/tex">W_h</script></span>：冷凝介质总质量流率（液相与气相之和）；   <br />
 <span><span class="MathJax_Preview">Cp</span><script type="math/tex">Cp</script></span>：比热； <br />
@@ -886,7 +922,11 @@ $$ Q= Q_{con}+Q_{sh}+Q_{sc} $$</p>
       
       <script>app.initialize({version:"1.1",url:{base:"../.."}})</script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script src="../../javascripts/flu.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
       
     
   </body>
