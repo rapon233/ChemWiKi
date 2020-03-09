@@ -2,11 +2,13 @@ window.MathJax = {
     tex: {
       inlineMath: [['$','$'], ['\\(', '\\)']],
       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true,
+      processEnvironments: true,
       tagSide: "right",
       tagIndent: ".8em",
       multlineWidth: "85%",
       tags: "ams",
-      autoload: expandable({
+      autoload: {
         mhchem: ['ce', 'pu']
       }
     },
@@ -27,7 +29,8 @@ window.MathJax = {
             if (sibling && sibling.matches('.MathJax_Preview')) {
               sibling.parentNode.removeChild(sibling);
             }
-        }, '']
-    }
+        }
+    }, '']
   }
+}
 };

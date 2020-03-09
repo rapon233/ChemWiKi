@@ -3,12 +3,18 @@
 ## 基本关系式和经验数据
 ### 基本关系式
 单位传热面积传递的热量$\frac{Q}{A}$与有效温差$\Delta T$成正比，与各项热阻之和成反比  
+
 $$ \frac{Q}{A}=\frac{\Delta T}{\sum R}=\frac{\Delta T}{\frac{1}{K}}=\Delta T \cdot K $$ 
+
 通常写成：$Q=K \cdot A \cdot \Delta T$  
 其中，$K$是各项热阻和的倒数：  
+
 $$ K=\frac{1}{\frac{A_0}{A_i} \cdot (\frac{1}{h_i}+r_i)+(\frac{1}{h_0}+r_0)+ r_p} $$   
+
 换热面积余量：  
+
 $$ C_f=(\frac{A}{A_d}-1)\times 100 $$  
+
 
 **符号表**  
 
@@ -35,9 +41,13 @@ $$ C_f=(\frac{A}{A_d}-1)\times 100 $$
 **热负荷**  
 
 1.焓差以及介质流量：  
+
 $$ Q=W \cdot \Delta H $$  
+
 2.平均比热$C_p$、进出口温度以及介质流量：  
+
 $$ Q=W \cdot C_p \cdot (T_1 -T_2) $$  
+
 >冷流体为  $(t_2 - t_1)$  
 
 设计换热器时，以热流体的热负荷作为总热负荷值较为安全。冷热物流热负荷相对误差应在&plusmn;10%以内。  
@@ -49,9 +59,13 @@ $$ Q=W \cdot C_p \cdot (T_1 -T_2) $$
 
 令热端温差$\Delta t_h = T_1 - t_2$；冷端温差$\Delta t_ｃ = T_2 - t_1$  
 当$|(\Delta t_h / \Delta t_c)-1| \le 0.1$时，
+
 $$ \Delta T_m = \frac{(\Delta t_h + \Delta t_c)}{2}=\frac{(T_1 - t_2) + (T_2 - t_1)}{2} $$  
-当$|(\Delta t_h / \Delta t_c)-1| > 0.1$时，
+
+当$|(\Delta t_h / \Delta t_c)-1| > 0.1$时，     
+
 $$ \Delta T_m = \frac{(\Delta t_h - \Delta t_c)}{ln(\frac{\Delta t_h}{\Delta t_c})}=\frac{(T_1 - t_2) - (T_2 - t_1)}{ln(\frac{T_1 - t_2}{T_2 - t_1})} $$  
+
 <span id="FT"></span>   
   
 2.对数平均温差校正系数$(F_T)$
@@ -59,7 +73,8 @@ $$ \Delta T_m = \frac{(\Delta t_h - \Delta t_c)}{ln(\frac{\Delta t_h}{\Delta t_c
 $F_T$值不得小于0.8  
 应当增加壳程串联数，或重新调整冷热物流出口温度
 
-3.平均有效温差$(\Delta T)$
+3.平均有效温差$(\Delta T)$  
+
 $$ \Delta T = \Delta T_m \cdot F_T $$   
 
 <span id="总传热系数"></span>   
@@ -102,22 +117,32 @@ $$ \Delta T = \Delta T_m \cdot F_T $$
 * 雷诺准数$Re_i$  
   
 $$ Re_i = \frac{du \rho}{\mu} = \frac{d_i \cdot G_i}{\mu_{iD}} $$  
+
 $d_i$管内径$m$，$\mu_{iD}$定性温度下介质粘度$Pa\cdot s$，$G_i$管内流体质量流速$kg/(m^2 \cdot s)$  
+
 $$ G_i = \frac{W_i}{S_i}=\rho v $$  
+
 $W_i$管内流体流率$kg/s$，$S_i$管程流通面积$m^2$  
+
 $$ S_i = \frac{N}{N_{tp}} \cdot \frac{\pi}{4} d^2_i $$  
+
 $N$管子总数，$N_{tp}$管程数  
 
 * 流体定性温度$(t_D)$  
   
 流体处于过渡区或湍流区$(Re_i>2100)$时：  
+
 $$ t_D = 0.4 t_h + 0.6 t_c $$  
+
 流体处于层流区$(Re_i \le 2100)$时：  
+
 $$ t_D = 0.5 (t_h + t_c) $$  
+
 
 * 普兰德准数$Pr_i$  
 
 $$ Pr_i = (\frac{C_p \cdot \mu}{\lambda})_{iD} $$  
+
 定性温度下介质导热系数：$\lambda_{iD}$，$W/(m \cdot K)$；  
 定性温度下介质比热容：$C_{piD}$，$J/(kg \cdot K)$  
 
@@ -132,11 +157,14 @@ $$ Pr_i = (\frac{C_p \cdot \mu}{\lambda})_{iD} $$
 \end{align}  
 
 对于以光管外表面积为基准的管内膜传热系数，有  
+
 $$ h_{io} = \frac{\lambda_{iD}}{d_0} \cdot J_{Hi} \cdot {Pr}^{\frac{1}{3}} \cdot \phi_i $$  
 
 $J_H$管内传热因子，无因次；  $d_0$管外径，$m$；  
 $\phi$管程壁温校正系数，无因次；  
+
 $$ \phi_i = (\frac{\mu_{iD}}{\mu_W})^{0.14} $$  
+
 $\mu_W$壁温下流体粘度，$Pa \cdot s$;  
 
 
@@ -144,31 +172,36 @@ $J_{Hi}$传热因子的计算方法如下：
 
 | 流动状态                                       | 计算式                                                                                                              | 实验误差           |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| $$ 层流区 \qquad {Re}_i \le 2100 $$            | $$ J_{Hi}=1.86 \cdot (Re)^{\frac{1}{3}}_i \cdot (\frac{d_i}{L})^{\frac{1}{3}} $$                                    | $$ \pm 12\% $$     |
-| $$ 过渡区 \qquad 2100 \lt {Re}_i \lt 10^4 $$ | $$ J_{Hi}=0.116 \cdot \left((Re)^{\frac{2}{3}}_i -125 \right) \cdot \left(1+(\frac{d_i}{L})^{\frac{2}{3}}\right) $$ | $$ - $$            |
-| $$ 湍流区 \qquad {Re}_i \ge 10^4 $$          | $$ J_{Hi}=0.023 \cdot (Re)^{0.8}_i $$                                                                               | $$ 15\% ~ -10\% $$ |
+| \(层流区 \qquad {Re}_i \le 2100\)            | \(J_{Hi}=1.86 \cdot (Re)^{\frac{1}{3}}_i \cdot (\frac{d_i}{L})^{\frac{1}{3}} \)                                    | \(\pm 12\%\)     |
+| \(过渡区 \qquad 2100 \lt {Re}_i \lt 10^4\) | \(J_{Hi}=0.116 \cdot \left((Re)^{\frac{2}{3}}_i -125 \right) \cdot \left(1+(\frac{d_i}{L})^{\frac{2}{3}}\right)\) | $-$            |
+| \(湍流区 \qquad {Re}_i \ge 10^4\)          | \(J_{Hi}=0.023 \cdot (Re)^{0.8}_i\)                                                                               | \(15\% ~ -10\%\) |
 
 >${Re}_i \le 2100$时，关联式结果偏保守，可将$J_{Hi}$因子乘以1.2~1.3倍校正  
 
 壁温$t_W$计算:  
 冷流体在管内：  
+
 $$ t_W = \frac{h_o}{h_o + h_{io}} \cdot (t_{oD}-t_{iD}) + t_{iD} $$  
+
 热流体在管内：  
+
 $$ t_W = \frac{h_o}{h_o + h_{io}} \cdot (t_{iD}-t_{oD}) + t_{oD} $$   
 
 **波纹管**  
 波纹管管内膜传热系数是以光管管外表面积为基准，计算步骤与光管一样  
 <span id="hio"></span>   
 管内膜传热系数：  
+
 $$ h_{io} = \frac{\lambda_{iD}}{d_0} \cdot J_{Hi} \cdot {Pr}^{\frac{1}{3}}_i \cdot \left(\frac{\varepsilon}{d_i}\right)^{0.478} \cdot \left(\frac{s}{d_i}\right)^{-0.383} \cdot \phi_i $$  
+
 $\epsilon$波高，m；$s$波距，m；  
 $J_{Hi}$传热因子的计算方法如下：  
 
 | 流动状态                                      | 计算式                                    |
 | --------------------------------------------- | ----------------------------------------- |
-| $$ 层流区 \qquad {Re}_i \le 2500 $$           | $$ J_{Hi}=0.1098 \cdot (Re)^{0.8653}_i $$ |
-| $$ 过渡区 \qquad 2500 \lt {Re}_i \lt 12000 $$ | $$ J_{Hi}=0.2475 \cdot (Re)^{0.7747}_i $$ |
-| $$ 湍流区 \qquad {Re}_i \ge 12000 $$          | $$ J_{Hi}=0.7872 \cdot (Re)^{0.6446}_i $$ |
+| \(层流区 \qquad {Re}_i \le 2500\)           | \(J_{Hi}=0.1098 \cdot (Re)^{0.8653}_i\) |
+| \(过渡区 \qquad 2500 \lt {Re}_i \lt 12000\) | \(J_{Hi}=0.2475 \cdot (Re)^{0.7747}_i\) |
+| \(湍流区 \qquad {Re}_i \ge 12000\)          | \(J_{Hi}=0.7872 \cdot (Re)^{0.6446}_i\) |
 
 
 >公式的实验误差在&plusmn;10%以内  
@@ -178,15 +211,20 @@ $J_{Hi}$传热因子的计算方法如下：
 
 ### 管程压力降
 管程压力降包括因摩擦阻力引起的直管压力降、回弯压力降和进出口压力降三部分    
+
 $$ \Delta P_t = (\Delta P_i + \Delta P_r)\cdot F_i + \Delta P_{Ni} $$  
+
 $\Delta P_i$——直管压力降，Pa；  
 $\Delta P_r$——弯管压力降，Pa；  
 $\Delta P_{Ni}$——进出口管嘴压力降，Pa；  
 $F_T$——管程压降结垢校正系数  
 
 **直管管程压力降**  
+
 $$ \Delta P = \frac{1}{2}V^2\cdot\rho\cdot\frac{L}{d}\cdot f $$
+
 $$ \Delta P_i = \frac{G_i^2}{2\rho_{iD}}\cdot\frac{L\cdot N_{tp}}{d_i}\cdot\frac{f_i}{\phi_i} $$
+
 **回弯压力降**  
 
 **进出口管嘴压力降**

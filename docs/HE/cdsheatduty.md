@@ -4,12 +4,19 @@
 ## 纯组分或冷凝温降小的混合物冷凝
 纯组分或冷凝温降小的混合物冷凝时的热负荷是*潜热*与*显热*负荷之和,如果存在过热或(和)过冷,则还需要加上过热负荷或(和)过冷负荷。冷凝温降小的混合物是指露点与泡点之差小的介质,此温差值一般不超过5&deg;C。    
 冷凝段热负荷：  
+
 $$ Q_{con}=W_h \cdot \{\Delta H_v \cdot (y_{in}-y_{out})+[Cp_l \cdot (1-y_{av})+Cp_v \cdot y_{av}] \cdot \Delta T_{con}\} $$
+
 过热段热负荷：  
+
 $$ Q_{sh}= W_h \cdot Cp_{vs} \cdot \Delta T_{sh} $$
+
 过冷段热负荷：  
+
 $$ Q_{sc}= W_h \cdot Cp_{ls} \cdot \Delta T_{sc} $$
+
 总热负荷：  
+
 $$ Q= Q_{con}+Q_{sh}+Q_{sc} $$
 
 !!! info ""     

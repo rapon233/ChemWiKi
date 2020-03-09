@@ -21,6 +21,10 @@ git pull origin master --allow-unrelated-histories
 
 mkdocs gh-deploy
 git add .
-git commit -m "1.7"
-git push origin master
+git commit -m "mathjax3 rewrite"
+git push origin master 
 
+git remote rm origin
+git remote add origin https://github.com/rapon233/mathjaxtest
+git pull origin master
+git pull origin master --allow-unrelated-histories
