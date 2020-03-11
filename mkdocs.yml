@@ -59,6 +59,7 @@ markdown_extensions:
     - pymdownx.arithmatex
     - pymdownx.details
     - pymdownx.superfences
+    - pymdownx.caret
     - pymdownx.mark:
         smart_mark: false
     - pymdownx.tilde

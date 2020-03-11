@@ -25,7 +25,7 @@ End time: April 30th,2020
 Latin "negotiari"   
 Infomation exchange between **counterparts of matched qualifications**   
 confer with sb.  reach a mutually acceptable agreement
-### characteristic of negotiation
+#### characteristic of negotiation
 Each side:  
 prepared to agree   
 common interest 
@@ -59,6 +59,23 @@ compromise
    adjourn the meeting 休会     
 7. Be patient and flexible  
 8. Make goos use of objective criteria  
+
+### Negotiation aproaches
+Game theory 博弈论    
+Distributive & Integrative  
+利益分配型&谈判合作型   
+
+#### Distributive
+Confrontational Negotiation   
+zero-sum, fixed pie   
+battle over a fixed amount of profit  
+predatorial, coercion施压, salami  
+leave the other side smallest helping possible  
+ZOPA Zoom of possible agreement   
+
+
+#### Integrative
+enlarge multiply 
 
 
 
