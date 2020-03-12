@@ -116,7 +116,3 @@ $$ \Delta P_i = 2f_{i}\cdot\frac{(G_i\cdot y_{av})^2}{\rho_{v}}\cdot\frac{L\cdot
 
 
 
-
------
-
-最近的修改: {{ git_revision_date }}

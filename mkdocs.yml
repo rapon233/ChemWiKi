@@ -16,6 +16,7 @@ nav:
         - '烯烃生产技术概述': MTO\olefins.md
         - 'MTO技术的研究与发展': MTO\R&D.md
         - '甲醇转化制烯烃机理': MTO\Mechanism.md
+        - 'DMTO工艺基础': MTO\engineerbase.md
     - 换热器:  
         - '总述': HE/HE.md   
         - 管壳式换热器:  
@@ -46,7 +47,7 @@ theme:
 #search_index_only: false
 plugins:
     - search
-#    - git-revision-date
+    - git-revision-date
 extra_javascript:
     - 'javascripts\flu.js'
     - 'https://polyfill.io/v3/polyfill.min.js?features=es6'

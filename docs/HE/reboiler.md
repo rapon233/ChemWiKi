@@ -42,9 +42,4 @@ Reboiler/重沸器（再沸器）
 
 
 
------
 
-
-
-
-最近的修改: {{ git_revision_date }}

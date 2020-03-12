@@ -297,9 +297,3 @@ $$ \Delta P_i = \frac{G_i^2}{2\rho_{iD}}\cdot\frac{L\cdot N_{tp}}{d_i}\cdot\frac
 
 
 
------
-
-
-
-
-最近的修改: {{ git_revision_date }}

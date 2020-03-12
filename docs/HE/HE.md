@@ -42,9 +42,6 @@ Heat Exchanger/换热器
 ### **管箱式**
 老式换热器
 
------
 
 
 
-
-最近的修改: {{ git_revision_date }}

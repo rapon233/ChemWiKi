@@ -75,12 +75,12 @@ ZOPA Zoom of possible agreement
 
 
 #### Integrative
-enlarge multiply 
+enlarge, multiply, expanding the pie   
+win-win potential, conditions for mutual-gain   
+objective criteria  
+
+emphasize problem solving   
+joint decision making, searching for commonalities    
 
 
 
-
-
------
-
-最近的修改: {{ git_revision_date }}

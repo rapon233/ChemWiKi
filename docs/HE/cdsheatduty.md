@@ -38,8 +38,3 @@ $$ Q= Q_{con}+Q_{sh}+Q_{sc} $$
 
 
 
-
-
------
-
-最近的修改: {{ git_revision_date }}
