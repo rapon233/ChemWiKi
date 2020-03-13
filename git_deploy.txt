@@ -21,7 +21,7 @@ git pull origin master --allow-unrelated-histories
 
 mkdocs gh-deploy
 git add .
-git commit -m "add eng design"
+git commit -m "compare mto&fcc"
 git push origin master 
 
 git remote rm origin
