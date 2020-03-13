@@ -76,11 +76,18 @@ ZOPA Zoom of possible agreement
 
 #### Integrative
 enlarge, multiply, expanding the pie   
-win-win potential, conditions for mutual-gain   
+win-win potential, creat conditions for mutual-gain, exchange infomation between parties   
 objective criteria  
 
 emphasize problem solving   
-joint decision making, searching for commonalities    
+develop shared principles for joint decision making, searching for commonalities    
+work jointly  
 
+4 essential elements:   
+interests, people, options, criteria   
 
+positions&interests  diff   
+go beyond positions seek to satisfy interests   
 
+people
+human frailty 人性弱点    
