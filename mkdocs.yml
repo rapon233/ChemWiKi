@@ -17,6 +17,7 @@ nav:
         - 'MTO技术的研究与发展': MTO\R&D.md
         - '甲醇转化制烯烃机理': MTO\Mechanism.md
         - 'DMTO工艺基础': MTO\engineerbase.md
+        - 'DMTO技术工业化': MTO\proc.md
     - 换热器:  
         - '总述': HE/HE.md   
         - 管壳式换热器:  
@@ -37,7 +38,7 @@ nav:
         - 'Grammar': MD\grammar.md
         - 'TEST': MD\TEST.md
     - 杂项: 
-        - 'Negotiation': Other\MOOC_Negotiation.md   
+        - 'Negotiation': Other\MOOC\MOOC_Negotiation.md   
 
 
 theme:
