@@ -58,6 +58,8 @@ markdown_extensions:
     - toc:
         permalink: "&para;"
     - markdown.extensions.admonition
+    - markdown.extensions.nl2br
+    - markdown.extensions.wikilinks
     - pymdownx.arithmatex
     - pymdownx.details
     - pymdownx.superfences
