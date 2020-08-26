@@ -37,6 +37,8 @@ nav:
         - 'LaTeX': MD/latex.md  
         - 'Grammar': MD\grammar.md
         - 'TEST': MD\TEST.md
+    - 广东省石化产业链规划:
+        - '揭阳大南海石化工业区': PetroIndustrial Park\JYProduct.md
     - 杂项: 
         - 'Negotiation': Other\MOOC\MOOC_Negotiation.md   
 
