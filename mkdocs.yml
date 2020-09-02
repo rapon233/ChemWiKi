@@ -38,6 +38,7 @@ nav:
         - 'Grammar': MD\grammar.md
         - 'TEST': MD\TEST.md
     - 广东省石化产业链规划:
+        - '综述' : PetroIndustrial Park\Intro.md
         - '揭阳大南海石化工业区': PetroIndustrial Park\JYProduct.md
     - 杂项: 
         - 'Negotiation': Other\MOOC\MOOC_Negotiation.md   
@@ -50,6 +51,7 @@ theme:
     
 plugins:
     - search
+    - autolinks
     - git-revision-date
 extra_javascript:
     - 'javascripts\flu.js'
@@ -58,10 +60,10 @@ extra_javascript:
 
 markdown_extensions:
     - toc:
+        slugify: !!python/name:pymdownx.slugs.uslugify
         permalink: "&para;"
     - markdown.extensions.admonition
     - markdown.extensions.nl2br
-    - markdown.extensions.wikilinks
     - pymdownx.arithmatex
     - pymdownx.details
     - pymdownx.superfences

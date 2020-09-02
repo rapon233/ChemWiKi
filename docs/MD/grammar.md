@@ -10,9 +10,3 @@
 [跳转](#anchor)
 
 
-
-
-
------
-
-最近的修改: {{ git_revision_date }}

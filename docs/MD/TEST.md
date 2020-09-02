@@ -32,3 +32,6 @@ Block2
 \[\ce{C6H5-CHO}\]   
 
 \[{\color{red} x} + {\color{blue} y}\]  
+
+
+
