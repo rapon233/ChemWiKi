@@ -18,6 +18,9 @@ nav:
         - '甲醇转化制烯烃机理': MTO\Mechanism.md
         - 'DMTO工艺基础': MTO\engineerbase.md
         - 'DMTO技术工业化': MTO\proc.md
+        - 工作笔记:
+            - '宝丰DMTO三代': MTO\BFDMTO-G3.md
+            - '天津渤化DMTO二代': MTO\BHDMTO-G2.md
     - 换热器:  
         - '总述': HE/HE.md   
         - 管壳式换热器:  
