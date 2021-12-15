@@ -44,7 +44,8 @@ nav:
         - '综述' : PetroIndustrial Park\Intro.md
         - '揭阳大南海石化工业区': PetroIndustrial Park\JYProduct.md
     - 杂项: 
-        - 'Negotiation': Other\MOOC\MOOC_Negotiation.md   
+        - 'Negotiation': Other\MOOC\MOOC_Negotiation.md
+        - '安全泄放装置': Other\MOOC\安全泄放装置培训.md   
 
 
 theme:
